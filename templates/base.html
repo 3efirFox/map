@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block body %}Geo{% endblock %}
+    <div class="container">
+        <div class="header">
+            <div class="title-block">
+                <h1>GEOPY</h1>
+            </div>
+            <div class="userpic"></div>
+        </div>
+        <div class="nav">
+             <ul>
+                <li><a href="#">Main Info</a></li>
+                <li><a href="/map">Map </a></li>
+                <li><a href="/about">About</a></li>
+             </ul>
+
+        </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <iframe src="http://127.0.0.1:5000/map" width="600" height="450" style="border:0;"></iframe>
+
+            </div>
+            <div class="sidebar">
+                <h3>Materials</h3>
+                <ul class="skills">
+                    <li><a href="https://geopy.readthedocs.io/en/stable/#installation">GeoPy</a></li>
+                    <li><a href="https://ichi.pro/ru/geokodirovanie-python-preobrazovanie-spiska-adresov-v-kartu-269530392772566">Geocode Python</a></li>
+                    <li><a href="https://proglib.io/p/python-web-map">Web Map Python</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+
+body {
+    font-family: 'Dongle', sans-serif;
+    background: url(https://media.istockphoto.com/vectors/world-map-background-concept-vector-id1287056904?b=1&k=20&m=1287056904&s=170667a&w=0&h=M_KWHw8cjHqtvKbumLI5V8qFlTAoScUH7OR4wekbeDY=) no-repeat;
+    background-size: 100%;
+    padding: 100px 0;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 800px;
+    min-height: 500px;
+    border: 10px solid rgb(46, 152, 201);
+    margin: 0 auto;
+    background: rgb(252, 251, 251);
+} 
+
+.header {
+    display: flex;    
+    height: 150px;    
+}
+
+.title-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;   
+    font-size: 30px;
+    background: url(https://media.istockphoto.com/vectors/blue-city-map-vector-id1151367176?s=612x612)  center center;
+    opacity: 0.5;
+    
+}
+
+.title {
+    position: relative;
+    z-index: 0.5;
+}
+
+.title-block ::after {
+    counter-reset: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.userpic {
+    display: flex;
+    width: 20%;
+    
+    background: url(https://image.shutterstock.com/image-vector/map-pin-line-icon-trendy-260nw-1992623264.jpg) no-repeat center center / cover;
+}
+
+.nav ul {
+    display: flex;
+    background: rgb(247, 241, 241);
+
+}
+
+.nav li a {
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+    border-right: 1px solid #c2bcf0;
+    transition: background .3s ;
+}
+
+.nav li a:hover {
+    background: #e2d9d9;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;     
+}
+
+.content p {
+    line-height: 30px;
+}
+
+
+.sidebar {    
+    width: 20%;
+}
+
+.skills li {
+    padding: 10px 0;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.skills li:hover {
+    transform: translateX(10px);
+}
